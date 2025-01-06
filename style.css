@@ -8,7 +8,7 @@
 }
 
 body {
-    color: #ededed;
+    color: #553bc7;
 }
 
 .header {
@@ -240,6 +240,63 @@ body {
     width: 300px;
     background-color: #45667e;
 }
+
+.filter-buttons {
+    margin: 20px 0;
+    text-align: center;
+}
+.filter-buttons button {
+    margin: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+.filter-buttons button:hover {
+    background-color: #ddd;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.hidden {
+    display: none;
+}
+
+#about{
+    background-color: #102128;
+    margin-top: 79px;
+    color: white;
+}
+  
+#about .container{
+    width: 100%;
+    padding: 55px;
+}
+  
+#about .container.footer .col-lg-6.col-md-6.col-sm-12.col-xs-12{
+    font-family:petitamedium;
+    color:#eee;
+}
+  
+.input-group.input-group-lg{
+    margin-top:23px;
+}
+  
 
 #kaki{
     color: rgb(40,78,94);

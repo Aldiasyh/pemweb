@@ -78,11 +78,84 @@
             <a href="https://www.sololearn.com/certificates/CC-O732AISX"><button class="btn btn-default"tyoe="button">LET'S SEE</button></a>
         </div>
     </div>
-    <div id="kaki">
-        <div class="container">
-          <h5 class="text-center">Aldiansyah. © 2024</h5>
+
+    <section id="gallery">
+        <h1 style="text-align: center; margin-top: 30px;">Gallery with Filters</h1>
+        <div class="filter-buttons">
+            <button data-filter="all">All</button>
+            <button data-filter="nature">Nature</button>
+            <button data-filter="architecture">Architecture</button>
+            <button data-filter="animals">Animals</button>
+        </div>
+        <div class="gallery">
+            <!-- Gallery Items -->
+            <div class="gallery-item nature">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.-g3I3zACwM9q5q8FSWcwqAHaE8&pid=Api&P=0&h=180" alt="Nature">
+            </div>
+            <div class="gallery-item architecture">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.wCMMlkhowdVwImxkt1pUxAHaFG&pid=Api&P=0&h=180" alt="Architecture">
+            </div>
+            <div class="gallery-item animals">
+                <img src="https://tse3.mm.bing.net/th?id=OIP._ZAlfGiodT7s-MzTZyXz5gHaE6&pid=Api&P=0&h=180" alt="Animals">
+            </div>
+            <div class="gallery-item nature">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.B8u7c37kE5ZdM5ZCRm-4hwHaFF&pid=Api&P=0&h=180" alt="Nature">
+            </div>
+            <div class="gallery-item architecture">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.1C5lyW9Cy6IvYefuowAKpwHaFB&pid=Api&P=0&h=180" alt="Architecture">
+            </div>
+            <div class="gallery-item animals">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.feL97buBS4yykcZgPxAL4QHaE8&pid=Api&P=0&h=180" alt="Animals">
+            </div>
+            <!-- Add more items as needed -->
+        </div>
+    </section>
+    <script>
+        const buttons = document.querySelectorAll('.filter-buttons button');
+        const items = document.querySelectorAll('.gallery-item');
+
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                const filter = button.getAttribute('data-filter');
+
+                items.forEach(item => {
+                    if (filter === 'all' || item.classList.contains(filter)) {
+                        item.classList.remove('hidden');
+                    } else {
+                        item.classList.add('hidden');
+                    }
+                });
+            });
+        });
+    </script>
+
+  <!-- about -->
+  <div id="about">
+    <div class="container footer">
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <h2>About Us</h2>
+        <p>Alamat
+            Gg. Gowok 2 No.32, Buaran, Kec. Serpong, Kota Tangerang Selatan, Banten 15310</p>
+          
+          <p>Contacts
+          e-mail: aldiansyahnv@gmail.com</p>
+          <p>Phone: 089676539434</p>
+      </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d247.8366445766191!2d106.69380816263445!3d-6.343990333432637!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e509f8a78d53%3A0x279a1a8d14520d39!2sGg.%20Gowok%202%20No.32%2C%20Buaran%2C%20Kec.%20Serpong%2C%20Kota%20Tangerang%20Selatan%2C%20Banten%2015310!5e0!3m2!1sen!2sid!4v1736138845221!5m2!1sen!2sid" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <a href="index.html"><div id="icon"><i class="fa fa-instagram"></i><i class="fa fa-facebook-official"></i><i class="fa fa-twitter-square"></i><i class="fa fa-youtube-play"></i></div></a>
         </div>
     </div>
+  </div>
+  <!-- about -->
 
-</body>
+  <!-- kaki -->
+  <div id="kaki">
+    <div class="container">
+      <h5 class="text-center">Aldiansyah © 2024</h5>
+    </div>
+  </div>
+  <!-- kaki -->
+ </body>
 </html>
